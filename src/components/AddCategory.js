@@ -18,7 +18,7 @@ export const AddCategory = ({setCat}) => {
         if( inputValue.trim().length > 2 ){
              //console.log('Sumit echo');
              //asi es como se cominica con el otro componente
-        setCat(cats =>[...cats, inputValue ]);
+        setCat(cats =>[inputValue,...cats ]);
         setInputValue('');
         }
 

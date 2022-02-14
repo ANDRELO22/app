@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react';
 
 export const GrifGridItem = ({ title, url}) => {
@@ -10,3 +11,10 @@ export const GrifGridItem = ({ title, url}) => {
         </div>
   )
 };
+ GrifGridItem.propTypes={
+
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
+
+ }
+
